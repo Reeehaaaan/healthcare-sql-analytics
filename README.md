@@ -21,7 +21,6 @@ This project explores a synthetic healthcare dataset using advanced SQL queries 
 - **MySQL** for database management and querying
 - **Python** (`Faker` library) for generating synthetic patient/lab data
 - **Excel/CSV** for loading data
-- *(Optional: Tableau was explored but this project is finalized as SQL-only)*
 
 ---
 
@@ -31,11 +30,11 @@ The dataset is composed of 5 relational tables:
 
 | Table Name   | Description                          | Row Count |
 |--------------|--------------------------------------|-----------|
-| `patients`   | Patient demographic and health data  | 1,000     |
-| `doctors`    | Hospital doctors and departments     | 50        |
-| `admissions` | Patient admission records            | 5,000     |
-| `diagnoses`  | Diagnoses per admission              | 7,500     |
-| `labs`       | Lab test results linked to admissions| 10,000    |
+| `patients`   | Patient demographic and health data  | 10,000    |
+| `doctors`    | Hospital doctors and departments     | 500       |
+| `admissions` | Patient admission records            | 50,000    |
+| `diagnoses`  | Diagnoses per admission              | 75,000    |
+| `labs`       | Lab test results linked to admissions| 1,00,000  |
 
 ---
 
