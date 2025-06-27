@@ -69,6 +69,26 @@ See `schema/ERD.png` for a full database relationship diagram.
 
 ---
 
+## 🐍 Synthetic Data Generation
+
+The dataset was created using Python's `Faker` library to simulate:
+- Global patient demographics
+- Admission timelines
+- Doctor assignments
+- Lab test results and diagnoses
+
+See [`scripts/generate_synthetic_data.py`](./scripts/generate_synthetic_data.py) for the full data generation process.
+
+---
+
+## ✅ What I Learned
+
+- How to structure and analyze a normalized healthcare database
+- Writing efficient and complex SQL using real-world logic
+- Data storytelling using SQL only (without frontend visualization)
+
+---
+
 ## 🧾 Folder Structure
 
 healthcare-sql-analytics/
@@ -77,3 +97,4 @@ healthcare-sql-analytics/
 ├── schema/ # ERD + CREATE TABLE scripts
 ├── scripts/ # Python data generator
 
+*Created by Rehan Ahmed Rikati*
