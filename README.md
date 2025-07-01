@@ -16,11 +16,12 @@ This project explores a synthetic healthcare dataset using advanced SQL queries 
 
 ---
 
-## 🧰 Tools Used
+## 🧰 Tools & Technologies
 
-- **MySQL** for database management and querying
-- **Python** (`Faker` library) for generating synthetic patient/lab data
-- **Excel/CSV** for loading data
+- **Database:** MySQL
+- **Languages:** SQL, Python (optional for visualization)
+- **Libraries:** pandas, seaborn, matplotlib, SQLAlchemy
+- **Data Source:** Synthetic data generated using Faker
 
 ---
 
@@ -45,29 +46,39 @@ See `schema/ERD.png` for a full database relationship diagram.
 
 ---
 
-## 📈 Key SQL Insights
+## 📊 Key SQL Insights
 
-### 1. Top Diagnoses
-- Most common medical conditions across all admissions
+1. Patients by region
+2. Top diagnoses
+3. Readmission rates by department
+4. Monthly admission trends
+5. Doctor-wise admission load
+6. Lab test stats (avg/min/max)
+7. Risk tagging by diagnosis
+8. Ranking patients by lab value
+9. Days since last admission
+10. Deviation from average test value
+11. Lab test severity classification
+12. Readmission behavior by diagnosis
+13. Patient admission vs hospital avg
+14. Lab trends over time
+15. Patient-wise test average
+16. Chronic diagnosis tracking
+17. Department performance benchmarking
+18. Risk profile (Chronic / Frequent / Stable)
 
-### 2. Doctor Performance
-- Doctors ranked by number of admissions handled
-
-### 3. Readmission Analysis
-- Patients readmitted within 30 days, grouped by diagnosis and department
-- Readmission rates by department and hospital average comparison
-
-### 4. Lab Test Analytics
-- Lab tests with highest average values
-- Patient lab results deviating significantly from the test average
-
-### 5. Advanced Insights
-- Using CTEs and window functions to calculate:
-  - Time between admissions
-  - Rank of lab results per test
-  - Tagging high-risk conditions based on repeat visits
+> 📌 All queries are stored in `query/insights.sql`.
 
 ---
+
+## 📈 Python Visualizations (Optional)
+
+- Visualizations for each SQL insight using `matplotlib` and `seaborn`
+- Run:
+  ```bash
+  python script/healthcare_viz.py
+
+  ---
 
 ## 🐍 Synthetic Data Generation
 
