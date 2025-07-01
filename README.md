@@ -71,12 +71,10 @@ See `schema/ERD.png` for a full database relationship diagram.
 
 ---
 
-## 📈 Python Visualizations (Optional)
+## 📈 Python Visualizations 
 
-- Visualizations for each SQL insight using `matplotlib` and `seaborn`
-- Run:
-  ```bash
-  python script/healthcare_viz.py
+- Visualizations for SQL insight using `matplotlib` and `seaborn`
+- script/healthcare_viz.py
 
   ---
 
